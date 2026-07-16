@@ -1,0 +1,22 @@
+{
+  "initials": "EG",
+  "name": "Estuardo Gómez",
+  "age": 18,
+  "role": "Desarrollador Full-Stack",
+  "headline": "Convirtiendo ideas en código y diseño.",
+  "summary": "Soy un graduando de perrito en Informatica full-stack, dedicado a transformar ideas en aplicaciones web innovadoras. Explora mis proyectos, donde muestro mi experiencia con tecnologías modernasy desarrollo web.",
+  "location": "Guatemala",
+  "yearsExperience": 2,
+  "currentlyStudying": true,
+  "availability": "Disponible para proyectos freelance",
+  "photo": "/assets/img/fotoPrincipal.png",
+  "resumeUrl": "/resume.pdf",
+  "email": "estuardogomez6b@gmail.com",
+  "phone": "+502 4257-0586",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/tu-usuario" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/tu-usuario" },
+    { "label": "CompuTrabajo", "url": "https://www.computrabajo.gt" },
+    { "label": "Twitter", "url": "https://twitter.com/tu-usuario" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "La imaginación supera al conocimiento",
+  "items": [
+    {
+      "id": "proyecto-destacado",
+      "name": "Nombre del Proyecto Destacado",
+      "tag": "Proyecto Destacado",
+      "featured": true,
+      "image": "",
+      "description": "Descripción breve de tu proyecto principal: qué problema resuelve, tecnologías usadas y resultados obtenidos.",
+      "skillsLearned": ["React", "Node.js", "MongoDB", "Express"],
+      "codeImage": "",
+      "github": "https://github.com/tu-usuario/proyecto",
+      "link": "https://tu-proyecto.com",
+      "downloadUrl": ""
+    },
+    {
+      "id": "proyecto-2",
+      "name": "Segundo Proyecto",
+      "tag": "Aplicación Web",
+      "featured": false,
+      "image": "",
+      "description": "",
+      "skillsLearned": ["HTML", "CSS", "JavaScript"],
+      "codeImage": "",
+      "github": "https://github.com/tu-usuario/proyecto-2",
+      "link": "https://tu-proyecto-2.com",
+      "downloadUrl": ""
+    },
+    {
+      "id": "proyecto-3",
+      "name": "Tercer Proyecto",
+      "tag": "Plantilla",
+      "featured": false,
+      "image": "",
+      "description": "",
+      "skillsLearned": ["React", "Tailwind CSS"],
+      "codeImage": "",
+      "github": "https://github.com/tu-usuario/proyecto-3",
+      "link": "https://tu-proyecto-3.com",
+      "downloadUrl": ""
+    }
+  ]
+}
