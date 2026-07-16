@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import ImagePlaceholder from "../components/ImagePlaceholder.jsx";
 import RotatingBadge from "../components/RotatingBadge.jsx";
 import NavBar from "../components/NavBar.jsx";
-import TechStack from "../components/TechStack.jsx";
 import profile from "../data/profile.json";
 
 export default function Home() {
@@ -82,19 +81,17 @@ export default function Home() {
                 </a>
               )}
             </div>
-
-            <TechStack />
           </motion.div>
         </div>
 
-        {/* Insignia rotatoria — reemplaza el "Hire Me" original, 100% editable */}
+        {/* Insignia rotatoria — reemplaza el "Hire Me" original, 100% editable 
         <div className="pointer-events-auto absolute bottom-8 left-8 sm:bottom-12 sm:left-12 hidden lg:block">
           <RotatingBadge
             text="Disponible para trabajar • "
             centerLabel="Contáctame"
             href={`mailto:${profile.email}`}
           />
-        </div>
+        </div>*/}
       </section>
     </div>
   );

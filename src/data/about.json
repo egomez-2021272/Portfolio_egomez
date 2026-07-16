@@ -6,7 +6,7 @@
     "Creo que el diseño no se trata solo de que las cosas se vean bien, sino de resolver problemas y crear experiencias intuitivas y agradables para los usuarios.",
     "Ya sea trabajando en un sitio web, una app móvil u otro producto digital, aplico mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario en cada proyecto."
   ],
-  "photo": "",
+  "photo": "/assets/img/fotoPrincipal.png",
   "stats": [
     { "label": "clientes satisfechos", "value": 10 },
     { "label": "proyectos completados", "value": 20 },
@@ -37,16 +37,22 @@
       { "name": "Git/GitHub", "percentage": 85 }
     ]
   },
-  "languages": [
-    { "name": "Español", "level": "Nativo" },
-    { "name": "Inglés", "level": "Intermedio" }
-  ],
   "softSkills": [
     "Trabajo en equipo",
     "Comunicación efectiva",
     "Resolución de problemas",
     "Aprendizaje continuo",
     "Gestión del tiempo"
+  ],
+  "programmingLanguages": [
+    { "name": "Java", "level": "Intermedio", "icon": "fab fa-java", "color": "#007396" },
+    { "name": ".NET", "level": "Bajo", "icon": "fas fa-code", "color": "#512BD4" },
+    { "name": "Node.js", "level": "Intermedio", "icon": "fab fa-node-js", "color": "#339933" },
+    { "name": "MongoDB", "level": "Intermedio", "icon": "fas fa-database", "color": "#47A248" },
+    { "name": "MySQL", "level": "Intermedio", "icon": "fas fa-database", "color": "#4479A1" },
+    { "name": "React", "level": "Intermedio", "icon": "fab fa-react", "color": "#61DAFB" },
+    { "name": "PostgreSQL", "level": "Bajo", "icon": "fas fa-database", "color": "#336791" },
+    { "name": "GitHub", "level": "Intermedio", "icon": "fab fa-github", "color": "#181717" }
   ],
   "experience": [
     {

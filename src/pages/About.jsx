@@ -91,7 +91,7 @@ export default function About() {
             ))}
           </div>
 
-          {/* Skills en anillos concéntricos */}
+          {/* Skills en anillos concéntricos 
           <div className="mt-12 sm:mt-20">
             <h2 className="text-center font-display text-2xl sm:text-3xl lg:text-4xl font-bold">
               Habilidades
@@ -99,7 +99,38 @@ export default function About() {
             <div className="mt-8 sm:mt-12">
               <SkillsOrbit core={about.skills.core} rings={about.skills.rings} />
             </div>
-          </div>
+          </div>*/}
+
+          {/* Lenguajes de programación */}
+          {about.programmingLanguages && about.programmingLanguages.length > 0 && (
+            <div className="mt-12 sm:mt-20">
+              <h2 className="text-center font-display text-2xl sm:text-3xl lg:text-4xl font-bold">
+                Lenguajes de Programación
+              </h2>
+              <div className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                {about.programmingLanguages.map((lang, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
+                  >
+                    <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <i className={`${lang.icon} text-3xl sm:text-4xl`} style={{ color: lang.color }}></i>
+                    </div>
+                    <h3 className="font-display text-base sm:text-lg font-semibold">
+                      {lang.name}
+                    </h3>
+                    <p className="mt-2 text-xs sm:text-sm text-muted">
+                      {lang.level}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Experiencia */}
           <div className="mt-12 sm:mt-20">
