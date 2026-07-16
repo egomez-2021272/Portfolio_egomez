@@ -1,0 +1,29 @@
+{
+  "title": "Las palabras pueden cambiar el mundo",
+  "featured": [
+    {
+      "id": "articulo-1",
+      "title": "Título de tu artículo destacado",
+      "image": "",
+      "description": "Resumen breve del artículo destacado.",
+      "url": "#",
+      "readTime": "5 min de lectura"
+    }
+  ],
+  "all": [
+    {
+      "id": "articulo-2",
+      "title": "Título del segundo artículo",
+      "image": "",
+      "url": "#",
+      "date": "Enero 2026"
+    },
+    {
+      "id": "articulo-3",
+      "title": "Título del tercer artículo",
+      "image": "",
+      "url": "#",
+      "date": "Febrero 2026"
+    }
+  ]
+}

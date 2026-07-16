@@ -1,0 +1,22 @@
+{
+  "initials": "EG",
+  "name": "Estuardo Gómez",
+  "age": 20,
+  "role": "Desarrollador Full-Stack",
+  "headline": "Convirtiendo ideas en código y diseño.",
+  "summary": "Soy desarrollador full-stack, dedicado a transformar ideas en aplicaciones web innovadoras. Explora mis proyectos y artículos, donde muestro mi experiencia en React y desarrollo web.",
+  "location": "Ciudad, País",
+  "yearsExperience": 2,
+  "currentlyStudying": true,
+  "availability": "Disponible para proyectos freelance",
+  "photo": "",
+  "resumeUrl": "/resume.pdf",
+  "email": "tucorreo@ejemplo.com",
+  "phone": "+502 1234-5678",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/tu-usuario" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/in/tu-usuario" },
+    { "label": "CompuTrabajo", "url": "https://www.computrabajo.gt" },
+    { "label": "Twitter", "url": "https://twitter.com/tu-usuario" }
+  ]
+}

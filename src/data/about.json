@@ -1,0 +1,77 @@
+{
+  "title": "La pasión impulsa el propósito",
+  "bioTitle": "BIOGRAFÍA",
+  "bio": [
+    "Hola, soy **Estuardo Gómez**, desarrollador web y diseñador UI/UX con pasión por crear experiencias digitales bonitas, funcionales y centradas en el usuario. Con años de experiencia en el área, siempre busco formas nuevas e innovadoras de dar vida a las ideas de mis clientes.",
+    "Creo que el diseño no se trata solo de que las cosas se vean bien, sino de resolver problemas y crear experiencias intuitivas y agradables para los usuarios.",
+    "Ya sea trabajando en un sitio web, una app móvil u otro producto digital, aplico mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario en cada proyecto."
+  ],
+  "photo": "",
+  "stats": [
+    { "label": "clientes satisfechos", "value": 10 },
+    { "label": "proyectos completados", "value": 20 },
+    { "label": "años de experiencia", "value": 2 }
+  ],
+  "personalInfo": {
+    "age": 20,
+    "location": "Ciudad, País",
+    "email": "tucorreo@ejemplo.com",
+    "phone": "+502 1234-5678",
+    "yearsExperience": 2,
+    "currentlyStudying": true,
+    "studyProgram": "Ingeniería en Informática"
+  },
+  "skills": {
+    "core": "Web",
+    "rings": [
+      ["HTML", "CSS", "JavaScript"],
+      ["ReactJS", "Node.js", "Express", "MongoDB"],
+      ["Git / GitHub", "Figma", "Tailwind CSS", "Vite"]
+    ],
+    "withPercentages": [
+      { "name": "HTML/CSS", "percentage": 90 },
+      { "name": "JavaScript", "percentage": 85 },
+      { "name": "React", "percentage": 80 },
+      { "name": "Node.js", "percentage": 75 },
+      { "name": "Python", "percentage": 70 },
+      { "name": "Git/GitHub", "percentage": 85 }
+    ]
+  },
+  "languages": [
+    { "name": "Español", "level": "Nativo" },
+    { "name": "Inglés", "level": "Intermedio" }
+  ],
+  "softSkills": [
+    "Trabajo en equipo",
+    "Comunicación efectiva",
+    "Resolución de problemas",
+    "Aprendizaje continuo",
+    "Gestión del tiempo"
+  ],
+  "experience": [
+    {
+      "role": "Desarrollador Full-Stack",
+      "company": "Nombre de la Empresa",
+      "companyUrl": "https://ejemplo.com",
+      "period": "2024 - Presente",
+      "location": "Ciudad, País",
+      "description": "Descripción breve de tus responsabilidades y logros en este puesto."
+    },
+    {
+      "role": "Practicante de Desarrollo",
+      "company": "Otra Empresa",
+      "companyUrl": "https://ejemplo.com",
+      "period": "2023",
+      "location": "Ciudad, País",
+      "description": "Descripción breve de tus responsabilidades y logros en este puesto."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Ingeniería / Licenciatura en Informática",
+      "period": "2022 - Presente",
+      "institution": "Nombre de tu Universidad",
+      "description": "Cursos relevantes: Estructuras de Datos, Bases de Datos, Ingeniería de Software."
+    }
+  ]
+}
