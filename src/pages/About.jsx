@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className="relative flex h-full w-full flex-col">
       <NavBar />
-      
+
       <section className="flex-1 overflow-y-auto px-6 sm:px-8 lg:px-12 py-8 sm:py-12">
         <div className="mx-auto w-full max-w-5xl lg:max-w-6xl">
           <h1 className="font-display text-3xl font-bold sm:text-4xl lg:text-5xl">
@@ -45,39 +45,64 @@ export default function About() {
               <div className="mt-4 sm:mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <p className="text-xs sm:text-sm text-muted">Nombre</p>
-                  <p className="font-display text-base sm:text-lg font-semibold">Estuardo Gómez</p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    Estuardo Daniel Gómez Chity
+                  </p>
                 </div>
                 <div>
                   <p className="text-xs sm:text-sm text-muted">Edad</p>
-                  <p className="font-display text-base sm:text-lg font-semibold">{about.personalInfo.age} años</p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.age} años
+                  </p>
                 </div>
                 <div>
                   <p className="text-xs sm:text-sm text-muted">Ubicación</p>
-                  <p className="font-display text-base sm:text-lg font-semibold">{about.personalInfo.location}</p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.location}
+                  </p>
                 </div>
                 <div>
                   <p className="text-xs sm:text-sm text-muted">Email</p>
-                  <p className="font-display text-base sm:text-lg font-semibold">{about.personalInfo.email}</p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.email}
+                  </p>
                 </div>
                 <div>
                   <p className="text-xs sm:text-sm text-muted">Teléfono</p>
-                  <p className="font-display text-base sm:text-lg font-semibold">{about.personalInfo.phone}</p>
-                </div>
-                <div>
-                  <p className="text-xs sm:text-sm text-muted">Años de experiencia</p>
-                  <p className="font-display text-base sm:text-lg font-semibold">{about.personalInfo.yearsExperience} años</p>
-                </div>
-                <div className="sm:col-span-2">
-                  <p className="text-xs sm:text-sm text-muted">Formación actual</p>
                   <p className="font-display text-base sm:text-lg font-semibold">
-                    {about.personalInfo.currentlyStudying ? `Estudiando ${about.personalInfo.studyProgram}` : "No estudiando actualmente"}
+                    {about.personalInfo.phone}
                   </p>
                 </div>
+                <div>
+                  <p className="text-xs sm:text-sm text-muted">
+                    Años de experiencia técnica acádemica
+                  </p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.yearsExperience} años
+                  </p>
+                </div>
+                <div className="sm:col-span-2">
+                  <p className="text-xs sm:text-sm text-muted">Referencias</p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.reference}
+                  </p>
+                </div>
+                
+                <div className="sm:col-span-2">
+                  <p className="text-xs sm:text-sm text-muted">
+                    Formación actual
+                  </p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.currentlyStudying
+                      ? `Estudiando ${about.personalInfo.studyProgram}`
+                      : "No estudiando actualmente"}
+                  </p>
+                </div> 
               </div>
             </div>
           )}
 
-          {/* Estadísticas */}
+          {/* Estadísticas 
           <div className="mt-10 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 rounded-2xl border border-border py-6 sm:py-10 text-center">
             {about.stats.map((stat) => (
               <div key={stat.label}>
@@ -89,7 +114,7 @@ export default function About() {
                 </p>
               </div>
             ))}
-          </div>
+          </div>*/}
 
           {/* Skills en anillos concéntricos 
           <div className="mt-12 sm:mt-20">
@@ -101,34 +126,114 @@ export default function About() {
             </div>
           </div>*/}
 
-          {/* Lenguajes de programación */}
-          {about.programmingLanguages && about.programmingLanguages.length > 0 && (
+          {/* Habilidades por categorías */}
+          {about.skills && (
             <div className="mt-12 sm:mt-20">
               <h2 className="text-center font-display text-2xl sm:text-3xl lg:text-4xl font-bold">
-                Lenguajes de Programación
+                Habilidades
               </h2>
-              <div className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-                {about.programmingLanguages.map((lang, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
-                  >
-                    <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <i className={`${lang.icon} text-3xl sm:text-4xl`} style={{ color: lang.color }}></i>
-                    </div>
-                    <h3 className="font-display text-base sm:text-lg font-semibold">
-                      {lang.name}
-                    </h3>
-                    <p className="mt-2 text-xs sm:text-sm text-muted">
-                      {lang.level}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
+
+              {/* Lenguajes */}
+              {about.skills.languages && about.skills.languages.length > 0 && (
+                <div className="mt-8 sm:mt-12">
+                  <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
+                    Lenguajes
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                    {about.skills.languages.map((lang, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
+                      >
+                        <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
+                          <i
+                            className={`${lang.icon} text-3xl sm:text-4xl`}
+                            style={{ color: lang.color }}
+                          ></i>
+                        </div>
+                        <h3 className="font-display text-base sm:text-lg font-semibold">
+                          {lang.name}
+                        </h3>
+                        <p className="mt-2 text-xs sm:text-sm text-muted">
+                          {lang.level}
+                        </p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Frameworks/Librerías */}
+              {about.skills.frameworks && about.skills.frameworks.length > 0 && (
+                <div className="mt-8 sm:mt-12">
+                  <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
+                    Frameworks/Librerías
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                    {about.skills.frameworks.map((framework, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
+                      >
+                        <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
+                          <i
+                            className={`${framework.icon} text-3xl sm:text-4xl`}
+                            style={{ color: framework.color }}
+                          ></i>
+                        </div>
+                        <h3 className="font-display text-base sm:text-lg font-semibold">
+                          {framework.name}
+                        </h3>
+                        <p className="mt-2 text-xs sm:text-sm text-muted">
+                          {framework.level}
+                        </p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Database/DevOps */}
+              {about.skills.databaseDevops && about.skills.databaseDevops.length > 0 && (
+                <div className="mt-8 sm:mt-12">
+                  <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
+                    Database/DevOps
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                    {about.skills.databaseDevops.map((db, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
+                      >
+                        <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
+                          <i
+                            className={`${db.icon} text-3xl sm:text-4xl`}
+                            style={{ color: db.color }}
+                          ></i>
+                        </div>
+                        <h3 className="font-display text-base sm:text-lg font-semibold">
+                          {db.name}
+                        </h3>
+                        <p className="mt-2 text-xs sm:text-sm text-muted">
+                          {db.level}
+                        </p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -265,6 +370,6 @@ function renderBold(text) {
       </strong>
     ) : (
       part
-    )
+    ),
   );
 }

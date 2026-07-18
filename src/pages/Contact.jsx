@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import NavBar from "../components/NavBar.jsx";
 import profile from "../data/profile.json";
 
@@ -26,13 +27,24 @@ export default function Contact() {
     setSubmitStatus("");
 
     try {
-      // Aquí implementaremos EmailJS cuando se configure
-      // Por ahora, simulamos el envío
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: "Estuardo Gómez"
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
+      console.error("Error al enviar email:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
