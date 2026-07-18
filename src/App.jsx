@@ -4,7 +4,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Articles from "./pages/Articles.jsx";
-import ProjectViews from "./pages/ProjectViews.jsx";
+import Contact from "./pages/Contact.jsx";
 import FlashcardLayout from "./components/FlashcardLayout.jsx";
 import PageTransition from "./components/PageTransition.jsx";
 
@@ -33,7 +33,7 @@ export default function App() {
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
         <Route path="/articles" element={<PageWrapper><Articles /></PageWrapper>} />
-        <Route path="/project-views" element={<PageWrapper><ProjectViews /></PageWrapper>} />
+        <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
       </Routes>
     </PageTransition>
   );

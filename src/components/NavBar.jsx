@@ -8,8 +8,7 @@ const links = [
   { to: "/", label: "Inicio" },
   { to: "/about", label: "Sobre mí" },
   { to: "/projects", label: "Proyectos" },
-  { to: "/project-views", label: "Vistas" },
-  { to: "/articles", label: "Artículos" },
+  { to: "/contact", label: "Contacto" },
 ];
 
 export default function NavBar() {

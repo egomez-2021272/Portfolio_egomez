@@ -13,10 +13,10 @@
     { "label": "años de experiencia", "value": 2 }
   ],
   "personalInfo": {
-    "age": 20,
-    "location": "Ciudad, País",
-    "email": "tucorreo@ejemplo.com",
-    "phone": "+502 1234-5678",
+    "age": 18,
+    "location": "Guatemala",
+    "email": "estuardogomez6b@gmail.com",
+    "phone": "+502 4257-0586",
     "yearsExperience": 2,
     "currentlyStudying": true,
     "studyProgram": "Ingeniería en Informática"
@@ -44,16 +44,98 @@
     "Aprendizaje continuo",
     "Gestión del tiempo"
   ],
-  "programmingLanguages": [
-    { "name": "Java", "level": "Intermedio", "icon": "fab fa-java", "color": "#007396" },
-    { "name": ".NET", "level": "Bajo", "icon": "fas fa-code", "color": "#512BD4" },
-    { "name": "Node.js", "level": "Intermedio", "icon": "fab fa-node-js", "color": "#339933" },
-    { "name": "MongoDB", "level": "Intermedio", "icon": "fas fa-database", "color": "#47A248" },
-    { "name": "MySQL", "level": "Intermedio", "icon": "fas fa-database", "color": "#4479A1" },
-    { "name": "React", "level": "Intermedio", "icon": "fab fa-react", "color": "#61DAFB" },
-    { "name": "PostgreSQL", "level": "Bajo", "icon": "fas fa-database", "color": "#336791" },
-    { "name": "GitHub", "level": "Intermedio", "icon": "fab fa-github", "color": "#181717" }
-  ],
+  "skills": {
+    "languages": [
+      {
+        "name": "Java",
+        "level": "Intermedio",
+        "icon": "fab fa-java",
+        "color": "#007396"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Intermedio",
+        "icon": "fab fa-js",
+        "color": "#F7DF1E"
+      },
+      {
+        "name": "TypeScript",
+        "level": "Básico",
+        "icon": "fab fa-js",
+        "color": "#3178C6"
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "React",
+        "level": "Intermedio",
+        "icon": "fab fa-react",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "Spring Boot",
+        "level": "Básico",
+        "icon": "fas fa-leaf",
+        "color": "#6DB33F"
+      },
+      {
+        "name": "Express",
+        "level": "Intermedio",
+        "icon": "fas fa-server",
+        "color": "#000000"
+      },
+      {
+        "name": "Fastify",
+        "level": "Básico",
+        "icon": "fas fa-bolt",
+        "color": "#FFFFFF"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Intermedio",
+        "icon": "fab fa-bootstrap",
+        "color": "#7952B3"
+      },
+      {
+        "name": "Vite",
+        "level": "Intermedio",
+        "icon": "fas fa-bolt",
+        "color": "#646CFF"
+      },
+      {
+        "name": ".NET",
+        "level": "Bajo",
+        "icon": "fas fa-code",
+        "color": "#512BD4"
+      }
+    ],
+    "databaseDevops": [
+      {
+        "name": "MongoDB",
+        "level": "Intermedio",
+        "icon": "fas fa-database",
+        "color": "#47A248"
+      },
+      {
+        "name": "MySQL",
+        "level": "Intermedio",
+        "icon": "fas fa-database",
+        "color": "#4479A1"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "Bajo",
+        "icon": "fas fa-database",
+        "color": "#336791"
+      },
+      {
+        "name": "GitHub",
+        "level": "Intermedio",
+        "icon": "fab fa-github",
+        "color": "#181717"
+      }
+    ]
+  },
   "experience": [
     {
       "role": "Desarrollador Full-Stack",
