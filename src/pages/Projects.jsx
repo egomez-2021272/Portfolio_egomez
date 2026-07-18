@@ -42,14 +42,14 @@ function FeaturedProjectCard({ project }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.4 }}
-      className="overflow-hidden rounded-2xl sm:rounded-3xl border border-border bg-surface"
+      className="overflow-hidden rounded-1xl sm:rounded-3xl border border-border bg-surface"
     >
       <ImagePlaceholder
         src={project.image}
         alt={project.name}
         className="aspect-video w-full object-cover"
       />
-      <div className="p-6 sm:p-8 lg:p-10">
+      <div className="p-4 sm:p-6 lg:p-6">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-accent">
           {project.tag}
         </p>

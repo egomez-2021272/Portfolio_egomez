@@ -67,19 +67,11 @@ export default function Home() {
                 Currículum ↗
               </a>
               <a
-                href={`mailto:${profile.email}`}
+                href={"/contact"}
                 className="link-underline text-sm sm:text-base font-medium text-text"
               >
                 Contáctame
               </a>
-              {profile.phone && (
-                <a
-                  href={`tel:${profile.phone}`}
-                  className="link-underline text-sm sm:text-base font-medium text-text"
-                >
-                  {profile.phone}
-                </a>
-              )}
             </div>
           </motion.div>
         </div>

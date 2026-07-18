@@ -46,7 +46,7 @@ export default function About() {
                 <div>
                   <p className="text-xs sm:text-sm text-muted">Nombre</p>
                   <p className="font-display text-base sm:text-lg font-semibold">
-                    Estuardo Gómez
+                    Estuardo Daniel Gómez Chity
                   </p>
                 </div>
                 <div>
@@ -75,12 +75,19 @@ export default function About() {
                 </div>
                 <div>
                   <p className="text-xs sm:text-sm text-muted">
-                    Años de experiencia
+                    Años de experiencia técnica acádemica
                   </p>
                   <p className="font-display text-base sm:text-lg font-semibold">
                     {about.personalInfo.yearsExperience} años
                   </p>
                 </div>
+                <div className="sm:col-span-2">
+                  <p className="text-xs sm:text-sm text-muted">Referencias</p>
+                  <p className="font-display text-base sm:text-lg font-semibold">
+                    {about.personalInfo.reference}
+                  </p>
+                </div>
+                
                 <div className="sm:col-span-2">
                   <p className="text-xs sm:text-sm text-muted">
                     Formación actual
@@ -90,12 +97,12 @@ export default function About() {
                       ? `Estudiando ${about.personalInfo.studyProgram}`
                       : "No estudiando actualmente"}
                   </p>
-                </div>
+                </div> 
               </div>
             </div>
           )}
 
-          {/* Estadísticas */}
+          {/* Estadísticas 
           <div className="mt-10 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-6 rounded-2xl border border-border py-6 sm:py-10 text-center">
             {about.stats.map((stat) => (
               <div key={stat.label}>
@@ -107,7 +114,7 @@ export default function About() {
                 </p>
               </div>
             ))}
-          </div>
+          </div>*/}
 
           {/* Skills en anillos concéntricos 
           <div className="mt-12 sm:mt-20">

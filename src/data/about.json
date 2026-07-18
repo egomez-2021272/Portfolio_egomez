@@ -19,7 +19,8 @@
     "phone": "+502 4257-0586",
     "yearsExperience": 2,
     "currentlyStudying": true,
-    "studyProgram": "Ingeniería en Informática"
+    "studyProgram": "Perito en Informática",
+    "reference": "Isidoro Esquite - 4572 5072"
   },
   "skills": {
     "core": "Web",
@@ -39,10 +40,11 @@
   },
   "softSkills": [
     "Trabajo en equipo",
-    "Comunicación efectiva",
-    "Resolución de problemas",
+    "Responsabilidad",
+    "Aplicado",
     "Aprendizaje continuo",
-    "Gestión del tiempo"
+    "Autodidacta",
+    "Capacidad de análisis"
   ],
   "skills": {
     "languages": [
@@ -59,10 +61,16 @@
         "color": "#F7DF1E"
       },
       {
-        "name": "TypeScript",
+        "name": "C#",
         "level": "Básico",
-        "icon": "fab fa-js",
+        "icon": "fab fa-dot-net",
         "color": "#3178C6"
+      },
+      {
+        "name": "Python",
+        "level": "Básico",
+        "icon": "fab fa-python",
+        "color": "#3776AB"
       }
     ],
     "frameworks": [
@@ -138,20 +146,28 @@
   },
   "experience": [
     {
-      "role": "Desarrollador Full-Stack",
-      "company": "Nombre de la Empresa",
+      "role": "Catequista",
+      "company": "Iglesia Divina Providencia",
       "companyUrl": "https://ejemplo.com",
-      "period": "2024 - Presente",
-      "location": "Ciudad, País",
-      "description": "Descripción breve de tus responsabilidades y logros en este puesto."
+      "period": "2019 - 2024",
+      "location": "Guatemala, Guatemala",
+      "description": "A pesar de no ser un trabajo formal me ha ayudado a generar experiencia a convivir en entornos con bastante afluencia de personas, el saber enseñar, además de cultivar valores."
     },
     {
-      "role": "Practicante de Desarrollo",
-      "company": "Otra Empresa",
-      "companyUrl": "https://ejemplo.com",
-      "period": "2023",
-      "location": "Ciudad, País",
-      "description": "Descripción breve de tus responsabilidades y logros en este puesto."
+      "role": "Instructor",
+      "company": "Club Jaguar",
+      "companyUrl": "",
+      "period": "2025",
+      "location": "Guatemala, Guatemala",
+      "description": "Fui colaborador durante un curso de vacaciones impartido por un club juvenil con relaciones en mi colegio, me ayudó a tener liderazgo, organización y compromiso."
+    },
+    {
+      "role": "Prácticas Supervisadas",
+      "company": "INDE",
+      "companyUrl": "https://inde.gob.gt",
+      "period": "2026",
+      "location": "Guatemala, Guatemala",
+      "description": "Actualmente estoy pronto a realizar mis prácticas supervisadas en el Instituto Nacional de Electrificación en el área de Desarrollo de Software."
     }
   ],
   "education": [
@@ -160,6 +176,18 @@
       "period": "2022 - Presente",
       "institution": "Nombre de tu Universidad",
       "description": "Cursos relevantes: Estructuras de Datos, Bases de Datos, Ingeniería de Software."
-    }
+    },
+    {
+      "degree": "Ciclo Básico",
+      "period": "2021 - 2023",
+      "institution": "Centro Educativo Técnico Laboral Kinal",
+      "description": "Lleve a cabo mi nivel de básicos en Kinal"
+    },
+    {
+      "degree": "Perito en Informática",
+      "period": "2024 - Presente",
+      "institution": "Centro Educativo Técnico Laboral Kinal",
+      "description": "Carrera técnica en informática"
+    } 
   ]
 }
