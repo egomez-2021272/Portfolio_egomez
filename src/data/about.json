@@ -2,9 +2,9 @@
   "title": "La pasión impulsa el propósito",
   "bioTitle": "BIOGRAFÍA",
   "bio": [
-    "Hola, soy **Estuardo Gómez**, desarrollador web y diseñador UI/UX con pasión por crear experiencias digitales bonitas, funcionales y centradas en el usuario. Con años de experiencia en el área, siempre busco formas nuevas e innovadoras de dar vida a las ideas de mis clientes.",
-    "Creo que el diseño no se trata solo de que las cosas se vean bien, sino de resolver problemas y crear experiencias intuitivas y agradables para los usuarios.",
-    "Ya sea trabajando en un sitio web, una app móvil u otro producto digital, aplico mi compromiso con la excelencia en el diseño y el pensamiento centrado en el usuario en cada proyecto."
+    "Hola mucho gusto, soy **Estuardo Gómez**, estudiante graduando de perito en informática que me estoy formando para ser un buen desarollador full-stack. Actualmente no cuento con experiencia laboral, únicamente académica y todo lo que conlleva, pero estoy en ese proceso de formación para realizar un trabajo bien hecho.",
+    "Creo que el diseño y la progra no se trata solo de que las cosas se vean bien, sino de resolver problemas y crear experiencias intuitivas y agradables para los usuarios. Algo que me ha servido para diseñar aplicaciones es el pensar como un usuario, analizar, revisar, corregir y mejorar la experiencia que tiene un cliente.",
+    "Tengo el propósito de seguir Ingeniería En Sistemas para aplicar a un puesto que me permita generar experiencia tanto en lo técnico como en virtudes, quiero potenciar mis habilidades en algo que me gusta y llama la atención como la informática, en concreto en el desarrollo de software."
   ],
   "photo": "/assets/img/fotoPrincipal.png",
   "stats": [
@@ -41,7 +41,7 @@
   "softSkills": [
     "Trabajo en equipo",
     "Responsabilidad",
-    "Aplicado",
+    "Diligente",
     "Aprendizaje continuo",
     "Autodidacta",
     "Capacidad de análisis"
@@ -63,7 +63,7 @@
       {
         "name": "C#",
         "level": "Básico",
-        "icon": "fab fa-dot-net",
+        "icon": "fas fa-laptop-code",
         "color": "#3178C6"
       },
       {
@@ -115,6 +115,12 @@
         "level": "Bajo",
         "icon": "fas fa-code",
         "color": "#512BD4"
+      },
+      {
+        "name": "Docker",
+        "level": "Intermedio",
+        "icon": "fab fa-docker",
+        "color": "#512BD4"
       }
     ],
     "databaseDevops": [
@@ -140,7 +146,7 @@
         "name": "GitHub",
         "level": "Intermedio",
         "icon": "fab fa-github",
-        "color": "#181717"
+        "color": "#F4F4F4"
       }
     ]
   },
@@ -172,22 +178,22 @@
   ],
   "education": [
     {
-      "degree": "Ingeniería / Licenciatura en Informática",
-      "period": "2022 - Presente",
-      "institution": "Nombre de tu Universidad",
-      "description": "Cursos relevantes: Estructuras de Datos, Bases de Datos, Ingeniería de Software."
+      "degree": "Nivel Primaria",
+      "period": "2012 - 2020",
+      "institution": "Colegio Liceo Salesiano",
+      "description": "Lleve a cabo mis estudios de primaria en el Colegio Salesiano"
     },
     {
       "degree": "Ciclo Básico",
       "period": "2021 - 2023",
       "institution": "Centro Educativo Técnico Laboral Kinal",
-      "description": "Lleve a cabo mi nivel de básicos en Kinal"
+      "description": "Lleve a cabo mi nivel de básicos en Kinal, donde empezó mi formación"
     },
     {
       "degree": "Perito en Informática",
       "period": "2024 - Presente",
       "institution": "Centro Educativo Técnico Laboral Kinal",
-      "description": "Carrera técnica en informática"
-    } 
+      "description": "Comencé con mi carrera técnica en perito en informática"
+    }
   ]
 }

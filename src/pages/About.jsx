@@ -16,13 +16,13 @@ export default function About() {
             {about.title}
           </h1>
 
-          {/* Biografía + foto */}
+          {/* biografía y foto */}
           <div className="mt-8 sm:mt-12 grid gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <h2 className="text-xs sm:text-sm font-semibold tracking-widest text-accent">
                 {about.bioTitle}
               </h2>
-              <div className="mt-3 sm:mt-4 space-y-3 sm:space-y-4 text-sm sm:text-base text-muted">
+              <div className="mt-3 sm:mt-4 space-y-3 sm:space-y-4 text-sm sm:text-base text-muted text-justify">
                 {about.bio.map((paragraph, i) => (
                   <p key={i}>{renderBold(paragraph)}</p>
                 ))}
@@ -73,21 +73,14 @@ export default function About() {
                     {about.personalInfo.phone}
                   </p>
                 </div>
+
                 <div>
-                  <p className="text-xs sm:text-sm text-muted">
-                    Años de experiencia técnica acádemica
-                  </p>
-                  <p className="font-display text-base sm:text-lg font-semibold">
-                    {about.personalInfo.yearsExperience} años
-                  </p>
-                </div>
-                <div className="sm:col-span-2">
                   <p className="text-xs sm:text-sm text-muted">Referencias</p>
                   <p className="font-display text-base sm:text-lg font-semibold">
                     {about.personalInfo.reference}
                   </p>
                 </div>
-                
+
                 <div className="sm:col-span-2">
                   <p className="text-xs sm:text-sm text-muted">
                     Formación actual
@@ -97,7 +90,7 @@ export default function About() {
                       ? `Estudiando ${about.personalInfo.studyProgram}`
                       : "No estudiando actualmente"}
                   </p>
-                </div> 
+                </div>
               </div>
             </div>
           )}
@@ -168,72 +161,74 @@ export default function About() {
               )}
 
               {/* Frameworks/Librerías */}
-              {about.skills.frameworks && about.skills.frameworks.length > 0 && (
-                <div className="mt-8 sm:mt-12">
-                  <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
-                    Frameworks/Librerías
-                  </h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-                    {about.skills.frameworks.map((framework, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                        className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
-                      >
-                        <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <i
-                            className={`${framework.icon} text-3xl sm:text-4xl`}
-                            style={{ color: framework.color }}
-                          ></i>
-                        </div>
-                        <h3 className="font-display text-base sm:text-lg font-semibold">
-                          {framework.name}
-                        </h3>
-                        <p className="mt-2 text-xs sm:text-sm text-muted">
-                          {framework.level}
-                        </p>
-                      </motion.div>
-                    ))}
+              {about.skills.frameworks &&
+                about.skills.frameworks.length > 0 && (
+                  <div className="mt-8 sm:mt-12">
+                    <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
+                      Frameworks/Librerías
+                    </h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                      {about.skills.frameworks.map((framework, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: index * 0.1 }}
+                          className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
+                        >
+                          <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i
+                              className={`${framework.icon} text-3xl sm:text-4xl`}
+                              style={{ color: framework.color }}
+                            ></i>
+                          </div>
+                          <h3 className="font-display text-base sm:text-lg font-semibold">
+                            {framework.name}
+                          </h3>
+                          <p className="mt-2 text-xs sm:text-sm text-muted">
+                            {framework.level}
+                          </p>
+                        </motion.div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* Database/DevOps */}
-              {about.skills.databaseDevops && about.skills.databaseDevops.length > 0 && (
-                <div className="mt-8 sm:mt-12">
-                  <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
-                    Database/DevOps
-                  </h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-                    {about.skills.databaseDevops.map((db, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: index * 0.1 }}
-                        className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
-                      >
-                        <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <i
-                            className={`${db.icon} text-3xl sm:text-4xl`}
-                            style={{ color: db.color }}
-                          ></i>
-                        </div>
-                        <h3 className="font-display text-base sm:text-lg font-semibold">
-                          {db.name}
-                        </h3>
-                        <p className="mt-2 text-xs sm:text-sm text-muted">
-                          {db.level}
-                        </p>
-                      </motion.div>
-                    ))}
+              {about.skills.databaseDevops &&
+                about.skills.databaseDevops.length > 0 && (
+                  <div className="mt-8 sm:mt-12">
+                    <h3 className="text-center font-display text-lg sm:text-xl lg:text-2xl font-semibold text-accent mb-4 sm:mb-6">
+                      Database/DevOps
+                    </h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                      {about.skills.databaseDevops.map((db, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: index * 0.1 }}
+                          className="rounded-xl border border-border bg-surface p-6 sm:p-8 text-center hover:border-accent/50 transition-all duration-300 group"
+                        >
+                          <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center rounded-full bg-surface/50 mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <i
+                              className={`${db.icon} text-3xl sm:text-4xl`}
+                              style={{ color: db.color }}
+                            ></i>
+                          </div>
+                          <h3 className="font-display text-base sm:text-lg font-semibold">
+                            {db.name}
+                          </h3>
+                          <p className="mt-2 text-xs sm:text-sm text-muted">
+                            {db.level}
+                          </p>
+                        </motion.div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
             </div>
           )}
 
