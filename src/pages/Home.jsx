@@ -4,6 +4,10 @@ import RotatingBadge from "../components/RotatingBadge.jsx";
 import NavBar from "../components/NavBar.jsx";
 import profile from "../data/profile.json";
 
+const link = [
+  {to: "/contact", label: "Contacto"}
+]
+
 export default function Home() {
   return (
     <div className="relative flex h-full w-full flex-col">
@@ -67,7 +71,7 @@ export default function Home() {
                 Currículum ↗
               </a>
               <a
-                href={"/contact"}
+                href={link.label}
                 className="link-underline text-sm sm:text-base font-medium text-text"
               >
                 Contáctame
