@@ -21,7 +21,7 @@ export default function PageTransition({ children, isAnimating }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.1 }}
+          transition={{ duration: 0.3 }}
         >
           {barColors.map((color, i) => (
             <motion.div
@@ -31,9 +31,9 @@ export default function PageTransition({ children, isAnimating }) {
               initial={{ scaleY: 0 }}
               animate={{ scaleY: [0, 1, 1, 0] }}
               transition={{
-                duration: 0.8,
-                delay: i * 0.05,
-                times: [0, 0.3, 0.7, 1],
+                duration: 2.5,
+                delay: i * 0.12,
+                times: [0, 0.2, 0.8, 1],
                 ease: "easeInOut"
               }}
             />

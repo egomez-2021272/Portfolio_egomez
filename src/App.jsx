@@ -22,7 +22,7 @@ export default function App() {
 
   useEffect(() => {
     setIsAnimating(true);
-    const timer = setTimeout(() => setIsAnimating(false), 800);
+    const timer = setTimeout(() => setIsAnimating(false), 2500);
     return () => clearTimeout(timer);
   }, [location.pathname]);
 
