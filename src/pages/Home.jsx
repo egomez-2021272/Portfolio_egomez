@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ImagePlaceholder from "../components/ImagePlaceholder.jsx";
 import RotatingBadge from "../components/RotatingBadge.jsx";
 import NavBar from "../components/NavBar.jsx";
@@ -78,14 +79,11 @@ export default function Home() {
               >
                 Currículum ↗
               </motion.a>
-              <motion.a
-                href={link[0].to}
-                className="link-underline text-sm sm:text-base font-medium text-text"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Contáctame
-              </motion.a>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link to={link[0].to} className="link-underline text-sm sm:text-base font-medium text-text">
+                  Contáctame
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         </div>
