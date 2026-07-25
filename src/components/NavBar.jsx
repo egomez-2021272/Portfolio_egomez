@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import profile from "../data/profile.json";
 import SocialIcons from "./SocialIcons.jsx";
@@ -45,12 +46,14 @@ export default function NavBar() {
         </button>
 
         {/* Logo circular con iniciales — 100% editable, sin marca de terceros */}
-        <NavLink
-          to="/"
-          className="flex h-10 w-10 sm:h-12 sm:w-14 items-center justify-center rounded-full border border-border font-display text-sm sm:text-base font-semibold text-text transition-colors hover:border-accent"
-        >
-          {profile.initials}
-        </NavLink>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+          <NavLink
+            to="/"
+            className="flex h-10 w-10 sm:h-12 sm:w-14 items-center justify-center rounded-full border border-border font-display text-sm sm:text-base font-semibold text-text transition-colors hover:border-accent"
+          >
+            {profile.initials}
+          </NavLink>
+        </motion.div>
 
         {/* Iconos sociales */}
         <div className="hidden items-center gap-4 sm:gap-5 lg:gap-6 sm:flex">
@@ -59,24 +62,32 @@ export default function NavBar() {
       </div>
 
       {/* Menú desplegable móvil */}
-      {open && (
-        <nav className="mx-auto mt-4 sm:mt-6 flex w-full max-w-6xl flex-col gap-4 sm:gap-6 rounded-2xl border border-border bg-surface p-6 sm:p-8 text-sm sm:text-base font-medium sm:hidden">
-          {links.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              end={link.to === "/"}
-              onClick={() => setOpen(false)}
-              className={({ isActive }) =>
-                isActive ? "text-accent" : "text-text hover:text-accent"
-              }
-            >
-              {link.label}
-            </NavLink>
-          ))}
-          <SocialIcons socials={profile.socials} className="pt-2" />
-        </nav>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="mx-auto mt-4 sm:mt-6 flex w-full max-w-6xl flex-col gap-4 sm:gap-6 rounded-2xl border border-border bg-surface p-6 sm:p-8 text-sm sm:text-base font-medium sm:hidden max-h-screen overflow-y-auto"
+          >
+            {links.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                end={link.to === "/"}
+                onClick={() => setOpen(false)}
+                className={({ isActive }) =>
+                  isActive ? "text-accent" : "text-text hover:text-accent"
+                }
+              >
+                {link.label}
+              </NavLink>
+            ))}
+            <SocialIcons socials={profile.socials} className="pt-2" />
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

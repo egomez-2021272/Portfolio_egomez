@@ -10,11 +10,11 @@ const link = [
 
 export default function Home() {
   return (
-    <div className="relative flex h-full w-full flex-col">
+    <div className="relative flex h-full w-full flex-col overflow-hidden">
       <NavBar />
       
-      <section className="relative flex flex-1 items-center justify-center px-6 sm:px-8 lg:px-12">
-        <div className="grid w-full items-center gap-8 sm:gap-12 lg:gap-16 lg:grid-cols-[minmax(0,350px)_1fr] xl:grid-cols-[minmax(0,400px)_1fr]">
+      <section className="relative flex flex-1 items-center justify-center px-6 sm:px-8 lg:px-12 overflow-y-auto py-8 sm:py-12">
+        <div className="grid w-full items-center gap-8 sm:gap-12 lg:gap-16 lg:grid-cols-[minmax(0,350px)_1fr] xl:grid-cols-[minmax(0,400px)_1fr] min-h-0 lg:items-center">
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             animate={{ opacity: 1, x: 0 }}
@@ -35,13 +35,19 @@ export default function Home() {
             className="text-center lg:text-left"
           >
             <div className="flex items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-3 sm:mb-4">
-              <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs sm:text-sm font-medium text-accent">
+              <motion.span 
+                className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs sm:text-sm font-medium text-accent"
+                whileHover={{ scale: 1.05 }}
+              >
                 {profile.role}
-              </span>
+              </motion.span>
               {profile.availability && (
-                <span className="inline-flex items-center rounded-full bg-green-500/10 px-3 py-1 text-xs sm:text-sm font-medium text-green-400">
+                <motion.span 
+                  className="inline-flex items-center rounded-full bg-green-500/10 px-3 py-1 text-xs sm:text-sm font-medium text-green-400"
+                  whileHover={{ scale: 1.05 }}
+                >
                   {profile.availability}
-                </span>
+                </motion.span>
               )}
             </div>
 
@@ -62,20 +68,24 @@ export default function Home() {
             )}
 
             <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-              <a
+              <motion.a
                 href={profile.resumeUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full bg-text px-6 py-3 text-sm sm:text-base font-medium text-bg transition-opacity hover:opacity-90"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Currículum ↗
-              </a>
-              <a
-                href={link.label}
+              </motion.a>
+              <motion.a
+                href={link[0].to}
                 className="link-underline text-sm sm:text-base font-medium text-text"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Contáctame
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         </div>
